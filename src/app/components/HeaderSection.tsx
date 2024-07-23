@@ -21,12 +21,9 @@ const HeaderSection = () => {
           <IconBtn
             style={{ marginRight: "50px" }}
             icon={"/images/icons/icon-ai.png"}
-            children={"Data Labeling Platform"}
+            text={"Data Labeling Platform"}
           />
-          <IconBtn
-            icon={"/images/icons/icon-robot.png"}
-            children={"Data GPT"}
-          />
+          <IconBtn icon={"/images/icons/icon-robot.png"} text={"Data GPT"} />
         </div>
       </div>
 
@@ -39,10 +36,7 @@ const HeaderSection = () => {
             data-front="Data Labeling Platform"
           ></a>
           {/* <button>立即注册</button> */}
-          <IconBtn
-            icon={"/images/icons/icon-rocket.png"}
-            children={"立即试用"}
-          />
+          <IconBtn icon={"/images/icons/icon-rocket.png"} text={"立即试用"} />
           <div>
             人工智能大模型训练前的数据清洗、标注、扩充等服务。并提供包括模型预训练、微调、定制化数据库在内的一站式人工智能模型训练解决方案。
           </div>
