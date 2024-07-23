@@ -15,11 +15,12 @@
     "next": "14.0.4",
     "postcss": "8.4.27",
     "react": "^18",
+    "react-aiwriter": "^1.0.0",
     "react-animated-numbers": "^0.16.0",
     "react-dom": "^18",
     "react-type-animation": "^3.1.0",
     "resend": "^1.0.0",
-    "sharp": "^0.33.2",
+    "sharp": "^0.33.1",
     "tailwindcss": "3.3.3"
   },
   "devDependencies": {
