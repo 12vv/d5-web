@@ -5,10 +5,11 @@ const LogoSection = () => {
   return (
     <div className="mt-24 py-4">
       <section id="logo">
-        <div className="pt-2 pb-2">
-          {/* <div className="flex overflow-hidden space-x-18 mt-4"> */}
-          <div className="flex space-x-20 h-[70px] logo-wrapper">
-            {/*  animate-loop-scroll  */}
+        {/* <div className="pt-2 pb-2"> */}
+        {/* <div className="flex overflow-hidden space-x-18 mt-4"> */}
+        <div className="logo-wrapper">
+          {/*  animate-loop-scroll  space-x-20 h-[70px] flex */}
+          <div>
             <Image
               loading="lazy"
               src="/images/logos/logo-bytedance.png"
@@ -56,13 +57,15 @@ const LogoSection = () => {
             />
             <Image
               loading="lazy"
-              src="/images/logos/logo-neteast.png"
-              width={220}
+              src="/images/logos/logo-netease.png"
+              width={110}
               height={50}
               unoptimized
               className="max-w-none"
               alt="Image 6"
             />
+          </div>
+          <div>
             {/* </div> */}
             {/* <div className="flex space-x-20 h-[70px] logo-wrapper"> */}
             {/*  animate-loop-scroll  */}
@@ -113,15 +116,16 @@ const LogoSection = () => {
             />
             <Image
               loading="lazy"
-              src="/images/logos/logo-neteast.png"
-              width={220}
+              src="/images/logos/logo-netease.png"
+              width={110}
               height={50}
               unoptimized
               className="max-w-none"
               alt="Image 6"
             />
-            {/* </div> */}
-            {/* <div className="flex space-x-20 animate-loop-scroll h-[70px]">
+          </div>
+          {/* </div> */}
+          {/* <div className="flex space-x-20 animate-loop-scroll h-[70px]">
               <Image
                 loading="lazy"
                 src="/images/logos/logo-bytedance.png"
@@ -177,8 +181,8 @@ const LogoSection = () => {
                 alt="Image 6"
               />
             </div> */}
-          </div>
         </div>
+        {/* </div> */}
       </section>
     </div>
   );
