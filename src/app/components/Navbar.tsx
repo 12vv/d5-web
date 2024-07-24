@@ -12,7 +12,7 @@ const navLinks = [
   },
   {
     title: "项目",
-    path: "/projects",
+    path: "/#",
   },
   {
     title: "联系",
