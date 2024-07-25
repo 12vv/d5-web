@@ -17,6 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Monda"
+          rel="stylesheet"
+        ></link>
         <link rel="icon" href="/images/favicon.ico" />
       </head>
       <body className={inter.className}>{children}</body>

@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import "./index.css";
 
 const navLinks = [
   {
@@ -22,9 +23,31 @@ const navLinks = [
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        // 这里可以调整滚动触发的高度
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-[#121212]">
+    <nav
+      className={`fixed mx-auto top-0 left-0 right-0 z-10 bg-[#121212] navbar ${
+        scroll ? "navbar-scroll" : ""
+      }`}
+    >
       <div className="flex container py-6 2xl:py-10 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}

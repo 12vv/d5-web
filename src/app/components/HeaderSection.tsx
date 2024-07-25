@@ -5,6 +5,7 @@ import Link from "next/link";
 import LinkBtn from "./LinkBtn";
 import "./index.css";
 import IconBtn from "./IconBtn";
+import CapsuleBtn from "./CapsuleBtn";
 
 const HeaderSection = () => {
   return (
@@ -36,12 +37,13 @@ const HeaderSection = () => {
             data-front="Data Labeling Platform"
           ></a>
           {/* <button>立即注册</button> */}
-          <IconBtn icon={"/images/icons/icon-rocket.png"} text={"立即试用"} />
+          {/* <IconBtn icon={"/images/icons/icon-rocket.png"} text={"立即试用"} /> */}
+          <CapsuleBtn />
           <div>
             人工智能大模型训练前的数据清洗、标注、扩充等服务。并提供包括模型预训练、微调、定制化数据库在内的一站式人工智能模型训练解决方案。
           </div>
         </div>
-        <div className="w-[600px] 2xl:w-[800px] video-wrapper relative h-full w-full">
+        <div className="w-[520px] 2xl:w-[800px] video-wrapper relative h-full w-full">
           <video
             width="100%"
             height="auto"

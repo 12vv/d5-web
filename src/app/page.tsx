@@ -13,6 +13,8 @@ import PlanSection from "./components/PlanSection";
 import { ScrollToTopButton } from "./components/ScrollToTopButton";
 import ExampleSection from "./components/ExampleSection";
 import LogoSection from "./components/LogoSection";
+import IntroductionSection from "./components/IntroductionSection";
+import BigTitleSection from "./components/BigTitleSection";
 
 export default function Home() {
   return (
@@ -22,7 +24,9 @@ export default function Home() {
         <Navbar />
         {/* <div className="container mt-24 mx-auto px-12 py-4"> */}
         <HeaderSection />
-        <LogoSection />
+        {/* <LogoSection /> */}
+        <IntroductionSection />
+        <BigTitleSection backgroundImage="/images/Vector-gradient.svg" />
         {/* <IconSection /> */}
         {/* <IntroSection /> */}
         {/* <ExampleSection /> */}

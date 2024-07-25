@@ -1,0 +1,22 @@
+/* VerticalTabs.css */
+.vertical-tabs {
+  position: relative;
+  height: 100px; /* 设置你需要的高度 */
+  overflow: hidden;
+  width: 100%;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.tab-content {
+  height: 300px; /* 确保每个项目的高度与容器相同 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

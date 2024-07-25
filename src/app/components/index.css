@@ -17,6 +17,11 @@ main {
 
 nav {
   background-color: transparent !important;
+  transition: background-color 0.4s;
+}
+
+.navbar-scroll {
+  background-color: rgba(0, 0, 0, 0.9) !important; /* 设置你需要的背景颜色 */
 }
 
 .header-section {
@@ -98,7 +103,8 @@ nav {
 
 .glow-bg {
   transform-origin: center center;
-  background-image: linear-gradient(
+  background-image: linear-gradient(to right top, #001aff, #9effff);
+  /* background-image: linear-gradient(
     to right top,
     #6c22bd,
     #8b25bb,
@@ -112,7 +118,7 @@ nav {
     #ff965b,
     #f5b255,
     #e1cd60
-  );
+  ); */
   width: 500px;
   height: 500px;
   filter: blur(100px);
@@ -160,29 +166,6 @@ nav {
 }
 
 .logo-wrapper {
-  /* animation: ticker 30s linear infinite; */
-  /* animation: 70s linear 0s infinite normal none running scroll;
-  display: flex;
-  width: 7368px;
-  gap: 1.6rem;
-  padding: 22px 0px; */
-  /* 
-  width: 90%;
-  max-width: 1536px;
-  margin-inline: auto;
-  position: relative;
-
-  height: 100px;
-  margin-top: 5rem;
-  overflow: hidden;
-  mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 1) 20%,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(0, 0, 0, 0)
-  ); */
-
   position: relative;
   display: flex;
   flex-direction: row;
@@ -241,3 +224,55 @@ nav {
     left: -200px;
   }
 } */
+
+.fwReyO {
+  justify-content: flex-start;
+  padding-bottom: 40px;
+  gap: 60px;
+}
+
+.ciVYpW {
+  display: flex;
+  width: 48px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: background-color 250ms ease-in-out 0s;
+}
+
+.eGucya {
+  display: flex;
+  width: 48px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0);
+  transition: background-color 250ms ease-in-out 0s;
+}
+
+.glow-bg-2 {
+  transform-origin: center center;
+  background-image: url("/images/Vector-gradient.png");
+  /* width: 1500px;
+  height: 1500px; */
+  /* filter: blur(100px); */
+
+  opacity: 0.7;
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: 99;
+  pointer-events: none;
+  transition: filter 0.25s ease-in-out, opacity 0.25s ease-in-out;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
