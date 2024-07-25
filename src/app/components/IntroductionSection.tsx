@@ -43,7 +43,7 @@ const IntroductionSection = () => {
             <VerticalTab tabs={tabs} interval={2000} />
           </div>
           <div className="sc-28ff5a11-6 fwReyO flex mt-20">
-            <button className="sc-28ff5a11-7 ciVYpW">
+            <button className="sc-28ff5a11-7 ciVYpW" key={1}>
               <img
                 alt=""
                 loading="lazy"
@@ -55,7 +55,7 @@ const IntroductionSection = () => {
                 src="/images/icons/Vector1.svg"
               />
             </button>
-            <button className="sc-28ff5a11-7 eGucya">
+            <button className="sc-28ff5a11-7 eGucya" key={2}>
               <img
                 alt=""
                 loading="lazy"
@@ -67,7 +67,7 @@ const IntroductionSection = () => {
                 src="/images/icons/Vector2.svg"
               />
             </button>
-            <button className="sc-28ff5a11-7 eGucya">
+            <button className="sc-28ff5a11-7 eGucya" key={3}>
               <img
                 alt=""
                 loading="lazy"
@@ -79,7 +79,7 @@ const IntroductionSection = () => {
                 src="/images/icons/Vector3.svg"
               />
             </button>
-            <button className="sc-28ff5a11-7 eGucya">
+            <button className="sc-28ff5a11-7 eGucya" key={4}>
               <img
                 alt=""
                 loading="lazy"
@@ -91,7 +91,7 @@ const IntroductionSection = () => {
                 src="/images/icons/Vector4.svg"
               />
             </button>
-            <button className="sc-28ff5a11-7 eGucya">
+            <button className="sc-28ff5a11-7 eGucya" key={5}>
               <img
                 alt=""
                 loading="lazy"
