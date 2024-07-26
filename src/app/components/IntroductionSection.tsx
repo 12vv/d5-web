@@ -8,13 +8,17 @@ import VerticalTab from "../components/VerticalTab";
 
 const IntroductionSection = () => {
   const tabs = [
-    <div style={{ height: "100%", width: "100%" }}>
+    <div style={{ height: "100%", width: "100%" }} key={1}>
       <p>
         杭州第五维度有限责任公司是一家成立于2024年的初创公司，专注于从数据角度提升人工智能产品的安全性和可靠性
       </p>
     </div>,
-    <div style={{ height: "100%", width: "100%" }}>Tab 2 Content</div>,
-    <div style={{ height: "100%", width: "100%" }}>Tab 3 Content</div>,
+    <div style={{ height: "100%", width: "100%" }} key={2}>
+      Tab 2 Content
+    </div>,
+    <div style={{ height: "100%", width: "100%" }} key={3}>
+      Tab 3 Content
+    </div>,
   ];
 
   return (
