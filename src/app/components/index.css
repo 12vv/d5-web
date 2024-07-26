@@ -7,7 +7,7 @@
 } */
 
 main {
-  background-image: url(/images/bg.png);
+  background-image: url(/images/gd-bg.png);
   /* background-position-x: 500px; */
   background-position-y: -1100px;
   background-position-x: 0;
@@ -24,7 +24,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.9) !important; /* 设置你需要的背景颜色 */
 }
 
-.header-section {
+.header-section .header-text {
   /* background-image: url(/images/light.png);
   background-position-x: 300px; */
 
@@ -233,8 +233,8 @@ nav {
 
 .ciVYpW {
   display: flex;
-  width: 48px;
-  height: 36px;
+  /* width: 48px;
+  height: 36px; */
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -245,8 +245,8 @@ nav {
 
 .eGucya {
   display: flex;
-  width: 48px;
-  height: 36px;
+  /* width: 48px;
+  height: 36px; */
   align-items: center;
   justify-content: center;
   cursor: pointer;

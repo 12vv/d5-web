@@ -5,6 +5,7 @@ import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 import "./index.css";
+import CapsuleBtn from "./CapsuleBtn";
 
 const navLinks = [
   {
@@ -82,7 +83,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div>
-          <button>免费注册</button>
+          <CapsuleBtn />
+          {/* <button>免费注册</button> */}
         </div>
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
