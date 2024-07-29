@@ -9,7 +9,7 @@ import RoundedButton from "../components/RoundedBtn";
 
 const DLPMainSection = () => {
   return (
-    <div className="dlp container mx-auto mt-20 py-4 px-4 header-section">
+    <div className="dlp dlp-container mx-auto mt-20 py-4 px-4">
       <div className="background-section">
         <div className="glow-bg-2 bg-contain bg-[80%] 2xl:bg-[60%]"></div>
         <div className="content">
@@ -33,10 +33,10 @@ const DLPMainSection = () => {
         </div>
       </div>
 
-      <div className="flex justify-between pt-20 2xl:pt-40 items-center">
-        <div className="w-[510px] 2xl:w-[800px] video-wrapper relative h-full w-full">
+      <div className="flex pt-20 2xl:pt-20 items-center justify-center">
+        <div className="w-[410px] 2xl:w-[1200px] video-wrapper h-full w-full">
           <video
-            width="80%"
+            width="100%"
             height="auto"
             preload="metadata"
             autoPlay
