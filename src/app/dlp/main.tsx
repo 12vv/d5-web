@@ -34,7 +34,7 @@ const DLPMainSection = () => {
       </div>
 
       <div className="flex pt-20 2xl:pt-20 items-center justify-center">
-        <div className="w-[410px] 2xl:w-[1200px] video-wrapper h-full w-full">
+        <div className="w-[900px] 2xl:w-[1200px] video-wrapper">
           <video
             width="100%"
             height="auto"
