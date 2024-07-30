@@ -2,8 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import "../components/index.css";
-import IconBtn from "../components/IconBtn";
-import CapsuleBtn from "../components/CapsuleBtn";
 import "./index.css";
 import RoundedButton from "../components/RoundedBtn";
 
@@ -16,7 +14,7 @@ const DLPMainSection = () => {
           <h1 className="title text-[80px] 2xl:text-[110px] font-semibold text-[#FFFFFF] text-opacity-90">
             <>Data Labeling Platform</>
           </h1>
-          <h2 className="text-[28px] mt-2 font-semibold">高校数据标注平台</h2>
+          <h2 className="text-[28px] mt-2 font-semibold">高效数据标注平台</h2>
           <div className="flex items-center justify-center mt-10">
             <RoundedButton
               text={"登录"}

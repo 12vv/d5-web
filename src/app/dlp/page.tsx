@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+import Navbar from "./Navbar";
 import { ScrollToTopButton } from "../components/ScrollToTopButton";
 import Footer from "../components/Footer";
 import LinkBtn from "../components/LinkBtn";
