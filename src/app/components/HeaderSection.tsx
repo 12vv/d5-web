@@ -64,6 +64,7 @@ const HeaderSection = () => {
               icon={"/images/icons/icon-rocket.png"}
               className="text-[20px] 2xl:text-[30px] px-[28px] py-[10px] 2xl:px-[40px] 2xl:py-[15px] mr-[10px] 2xl:mr-[40px]"
             />
+            <div className="glow-bg-small"></div>
             <RoundedButtonOutline
               text="加入我们"
               onClick={() => {}}
