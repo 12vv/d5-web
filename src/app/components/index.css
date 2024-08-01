@@ -25,7 +25,8 @@ nav {
 }
 
 .navbar-scroll {
-  background-color: rgba(0, 0, 0, 0.95) !important; /* 设置你需要的背景颜色 */
+  background-color: rgba(0, 0, 0, 0.8) !important; /* 设置你需要的背景颜色 */
+  backdrop-filter: blur(10px);
 }
 
 .header-section .header-text {
@@ -407,7 +408,7 @@ nav {
 .blinking-cursor {
   font-weight: bold;
   color: #4090ff;
-  animation: blink1 0.5s step-end infinite;
+  animation: blink1 1.2s step-end infinite;
 }
 
 @keyframes blink1 {
