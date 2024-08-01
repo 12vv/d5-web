@@ -34,7 +34,7 @@ const IntroductionSection = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-44 py-4 px-4 header-section">
+    <div className="container mx-auto mt-36 py-4 px-4 header-section">
       <div className="flex items-center  rounded-lg  md:flex-row justify-between pt-5 2xl:pt-[140px] w-full">
         <div className="w-2/4 ml-20">
           <img

@@ -11,15 +11,15 @@ import RoundedButtonOutline from "./RoundedBtnOutline";
 
 const HeaderSection = () => {
   return (
-    <div className="container mx-auto mt-44 py-4 px-4 header-section">
+    <div className="container mx-auto mt-36 py-4 px-4 header-section">
       <div className="flex flex-col rounded-lg  md:flex-row justify-between w-full">
-        <div className="text-[70px] 2xl:text-[80px] font-extrabold">
+        <div className="text-[80px] 2xl:text-[90px] font-extrabold">
           {/* <img
             className="h-[60px] lg:h-[90px] 2xl:h-[120px] rounded-r-lg object-cover md:rounded-none md:rounded-r-lg"
             src={"/images/header-logo.png"}
             alt=""
           /> */}
-          <p className="ml-20">让天下没有</p>
+          <p className="ml-20">让天下再没有</p>
           <p className="gradient-text">
             难用的数据 <span className="blinking-cursor">|</span>
           </p>
@@ -45,7 +45,7 @@ const HeaderSection = () => {
           {/* <button>立即注册</button> */}
           {/* <IconBtn icon={"/images/icons/icon-rocket.png"} text={"立即试用"} /> */}
           {/* <CapsuleBtn /> */}
-          <div className="css-typing text-[16px] 2xl:text-[20px] mt-[40px] w-[80%]">
+          <div className="css-typing text-[18px] 2xl:text-[22px] mt-[20px] w-[80%]">
             <p className="">
               人工智能大模型训练前的
               <span className="font-bold">数据清洗、数据标注、数据扩充</span>
