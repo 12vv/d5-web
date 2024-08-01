@@ -217,7 +217,7 @@ nav {
 .fwReyO {
   justify-content: flex-start;
   padding-bottom: 40px;
-  gap: 60px;
+  gap: 70px;
 }
 
 .ciVYpW {
@@ -234,8 +234,6 @@ nav {
 
 .eGucya {
   display: flex;
-  /* width: 48px;
-  height: 36px; */
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -274,7 +272,7 @@ nav {
   overflow: hidden;
 }
 .css-typing p:nth-child(1) {
-  width: 28em;
+  width: 30em;
   -webkit-animation: type 5s steps(40, end);
   animation: type 5s steps(40, end);
   -webkit-animation-fill-mode: forwards;
@@ -282,7 +280,7 @@ nav {
 }
 
 .css-typing p:nth-child(2) {
-  width: 28em;
+  width: 30em;
   opacity: 0;
   -webkit-animation: type2 5s steps(40, end);
   animation: type2 5s steps(40, end);
@@ -293,7 +291,7 @@ nav {
 }
 
 .css-typing p:nth-child(3) {
-  width: 10em;
+  width: 12em;
   opacity: 0;
   -webkit-animation: type3 3s steps(40, end),
     blink 0.5s step-end infinite alternate;

@@ -47,14 +47,14 @@ const HeaderSection = () => {
           {/* <CapsuleBtn /> */}
           <div className="css-typing text-[18px] 2xl:text-[22px] mt-[20px] w-[80%]">
             <p className="">
-              人工智能大模型训练前的
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人工智能大模型训练前的
               <span className="font-bold">数据清洗、数据标注、数据扩充</span>
-              等服务。
+              等服
             </p>
             <p className="">
-              并提供包括模型预训练、微调、定制化数据库在内的一站式人工智
+              务。并提供包括模型预训练、微调、定制化数据库在内的一站式人
             </p>
-            <p className="">能模型训练解决方案。</p>
+            <p className="">工智能模型训练解决方案。</p>
           </div>
 
           <div className="flex mt-10">

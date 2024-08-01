@@ -44,7 +44,7 @@ const IntroductionSection = () => {
           />
         </div>
 
-        <div className="flex items-center flex-col mr-10">
+        <div className="flex items-end flex-col mr-10">
           <div className="flex mb-20">
             <img
               className="mr-10 w-[300px] 2xl:w-[400px]"
@@ -63,8 +63,8 @@ const IntroductionSection = () => {
               <img
                 alt=""
                 loading="lazy"
-                width="20"
-                height="20"
+                width="30"
+                height="30"
                 decoding="async"
                 data-nimg="1"
                 className="content-icons outliner"
@@ -75,8 +75,8 @@ const IntroductionSection = () => {
               <img
                 alt=""
                 loading="lazy"
-                width="20"
-                height="20"
+                width="30"
+                height="30"
                 decoding="async"
                 data-nimg="1"
                 className="content-icons chat"
@@ -87,8 +87,8 @@ const IntroductionSection = () => {
               <img
                 alt=""
                 loading="lazy"
-                width="20"
-                height="20"
+                width="30"
+                height="30"
                 decoding="async"
                 data-nimg="1"
                 className="content-icons ai"
@@ -99,8 +99,8 @@ const IntroductionSection = () => {
               <img
                 alt=""
                 loading="lazy"
-                width="20"
-                height="20"
+                width="30"
+                height="30"
                 decoding="async"
                 data-nimg="1"
                 className="content-icons rewrite"
@@ -111,8 +111,8 @@ const IntroductionSection = () => {
               <img
                 alt=""
                 loading="lazy"
-                width="20"
-                height="20"
+                width="30"
+                height="30"
                 decoding="async"
                 data-nimg="1"
                 className="content-icons summarize"

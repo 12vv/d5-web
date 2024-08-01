@@ -15,15 +15,10 @@ button {
 
 .primary {
   width: 120px;
-
   background-color: #a0a0a0;
   color: white;
   position: relative;
   z-index: 1;
-}
-
-.primary:hover {
-  background-color: #0056b3;
 }
 
 .secondary {
@@ -33,10 +28,5 @@ button {
   position: absolute;
   top: 0;
   left: 30px; /* Adjust this value to control the amount of overlap */
-
   z-index: 2; /* Ensure this button is on top */
-}
-
-.secondary:hover {
-  background-color: #5a6268;
 }
