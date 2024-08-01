@@ -6,3 +6,76 @@
   text-align: center;
   transition: all 0.3s ease;
 }
+
+.icon-btn:before {
+  content: "";
+  position: absolute;
+  top: 0.8em;
+  left: 0.6em;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: 0.2s, opacity 0.6s;
+  -moz-transition: 0.2s, opacity 0.6s;
+  -o-transition: 0.2s, opacity 0.6s;
+  transition: 0.2s, opacity 0.6s;
+}
+
+.icon-btn:before {
+  content: "立即试用";
+  -webkit-transform: translate(0, -150%);
+  -moz-transform: translate(0, -150%);
+  -ms-transform: translate(0, -150%);
+  -o-transform: translate(0, -150%);
+  transform: translate(0, -150%);
+}
+
+/* :after */
+
+/* .icon-btn:after {
+  content: "立即试用";
+  -webkit-transform: translate(150%, 0);
+  -moz-transform: translate(150%, 0);
+  -ms-transform: translate(150%, 0);
+  -o-transform: translate(150%, 0);
+  transform: translate(150%, 0);
+} */
+
+.icon-btn:hover span {
+  opacity: 0;
+}
+
+.icon-btn:hover:before {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.icon-btn {
+  display: flex;
+  position: relative;
+  /* margin: 1em; */
+  /* padding: 0.67em; */
+  /* border: 2px solid #fff; */
+  overflow: hidden;
+  text-decoration: none;
+  /* font-size: 2em; */
+}
+
+.icon-btn span {
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
