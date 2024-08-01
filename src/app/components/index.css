@@ -276,3 +276,159 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.css-typing p {
+  margin-bottom: 7px;
+  border: none;
+  border-right: 0.15em solid #4090ff;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing p:nth-child(1) {
+  width: 28em;
+  -webkit-animation: type 5s steps(40, end);
+  animation: type 5s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+  width: 28em;
+  opacity: 0;
+  -webkit-animation: type2 5s steps(40, end);
+  animation: type2 5s steps(40, end);
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+  width: 10em;
+  opacity: 0;
+  -webkit-animation: type3 3s steps(40, end),
+    blink 0.5s step-end infinite alternate;
+  animation: type3 3s steps(40, end), blink 0.5s step-end infinite alternate;
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.15em solid #4090ff;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.15em solid #4090ff;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid #4090ff;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid #4090ff;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+.gradient-text {
+  font-weight: bold;
+  background: linear-gradient(to right, #4090ff, #7be7ff, #7862ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* border-right: 0.1em solid #4090ff; */
+  display: inline-block;
+  padding-right: 20px;
+  /* animation: blink 1s step-end infinite; */
+}
+
+.blinking-cursor {
+  font-weight: bold;
+  color: #4090ff;
+  animation: blink1 0.5s step-end infinite;
+}
+
+@keyframes blink1 {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #4090ff;
+  }
+}

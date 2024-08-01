@@ -6,17 +6,23 @@ import LinkBtn from "./LinkBtn";
 import "./index.css";
 import IconBtn from "./IconBtn";
 import CapsuleBtn from "./MainBtn";
+import RoundedButton2 from "./RoundedBtn2";
+import RoundedButtonOutline from "./RoundedBtnOutline";
 
 const HeaderSection = () => {
   return (
     <div className="container mx-auto mt-44 py-4 px-4 header-section">
       <div className="flex flex-col rounded-lg  md:flex-row justify-between pt-5 2xl:pt-[140px] w-full">
-        <div>
-          <img
+        <div className="text-[70px] 2xl:text-[80px] font-extrabold">
+          {/* <img
             className="h-[60px] lg:h-[90px] 2xl:h-[120px] rounded-r-lg object-cover md:rounded-none md:rounded-r-lg"
             src={"/images/header-logo.png"}
             alt=""
-          />
+          /> */}
+          <p className="ml-20">让天下没有</p>
+          <p className="gradient-text">
+            难用的数据 <span className="blinking-cursor">|</span>
+          </p>
         </div>
         <div className="flex items-center">
           <IconBtn
@@ -28,22 +34,44 @@ const HeaderSection = () => {
         </div>
       </div>
 
-      <div className="flex justify-between pt-20 2xl:pt-40 items-center">
+      <div className="flex justify-between pt-5 2xl:pt-20">
         <div className="w-2/4 mr-[50px] xl:[mr-200px]">
-          <a
+          {/* <a
             href="#"
             className="btn-flip"
             data-back="立即试用"
             data-front="Data Labeling Platform"
-          ></a>
+          ></a> */}
           {/* <button>立即注册</button> */}
           {/* <IconBtn icon={"/images/icons/icon-rocket.png"} text={"立即试用"} /> */}
-          <CapsuleBtn />
-          <div className="text-[16px] 2xl:text-[20px] mt-[40px] w-[80%]">
-            人工智能大模型训练前的数据清洗、标注、扩充等服务。并提供包括模型预训练、微调、定制化数据库在内的一站式人工智能模型训练解决方案。
+          {/* <CapsuleBtn /> */}
+          <div className="css-typing text-[16px] 2xl:text-[20px] mt-[40px] w-[80%]">
+            <p className="">
+              人工智能大模型训练前的
+              <span className="font-bold">数据清洗、数据标注、数据扩充</span>
+              等服务。
+            </p>
+            <p className="">
+              并提供包括模型预训练、微调、定制化数据库在内的一站式人工智
+            </p>
+            <p className="">能模型训练解决方案。</p>
+          </div>
+
+          <div className="flex mt-10">
+            <RoundedButton2
+              text="申请试用"
+              onClick={() => {}}
+              icon={"/images/icons/icon-rocket.png"}
+              className="text-[20px] 2xl:text-[30px] px-[28px] py-[10px] 2xl:px-[40px] 2xl:py-[15px] mr-[10px] 2xl:mr-[40px]"
+            />
+            <RoundedButtonOutline
+              text="加入我们"
+              onClick={() => {}}
+              className="text-[20px] 2xl:text-[30px] px-[28px] py-[10px] 2xl:px-[40px] 2xl:py-[15px]"
+            />
           </div>
         </div>
-        <div className="w-[510px] 2xl:w-[800px] video-wrapper relative h-full w-full">
+        <div className="w-[530px] 2xl:w-[800px] video-wrapper relative h-full">
           <video
             width="100%"
             height="auto"
