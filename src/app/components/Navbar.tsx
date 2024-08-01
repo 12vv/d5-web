@@ -20,6 +20,10 @@ const navLinks = [
     title: "联系",
     path: "/contact",
   },
+  {
+    title: "合作",
+    path: "/#",
+  },
 ];
 
 const Navbar = () => {
@@ -76,7 +80,7 @@ const Navbar = () => {
         <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex md:p-0 space-x-2 md:flex-row md:space-x-4 mt-0 text-[20px] md:text-[16px] font-bold">
             {navLinks.map((link, index) => (
-              <li key={index} className="px-2 md:px-4">
+              <li key={index} className="px-2 md:px-10 2xl:px-16">
                 <NavLink href={link.path} title={link.title} />
               </li>
             ))}

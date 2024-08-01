@@ -25,7 +25,7 @@ const VerticalTab: React.FC<VerticalTabsProps> = ({
   return (
     <div className="vertical-tabs">
       <div
-        className="tabs-container w-[400px]"
+        className="tabs-container w-[500px] leading-8 text-[18px]"
         style={{
           transform: `translateY(-${(activeIndex * 100) / tabs.length}%)`,
         }}

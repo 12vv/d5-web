@@ -12,7 +12,7 @@ import RoundedButtonOutline from "./RoundedBtnOutline";
 const HeaderSection = () => {
   return (
     <div className="container mx-auto mt-44 py-4 px-4 header-section">
-      <div className="flex flex-col rounded-lg  md:flex-row justify-between pt-5 2xl:pt-[140px] w-full">
+      <div className="flex flex-col rounded-lg  md:flex-row justify-between w-full">
         <div className="text-[70px] 2xl:text-[80px] font-extrabold">
           {/* <img
             className="h-[60px] lg:h-[90px] 2xl:h-[120px] rounded-r-lg object-cover md:rounded-none md:rounded-r-lg"
