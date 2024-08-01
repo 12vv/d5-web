@@ -9,10 +9,14 @@
 main {
   background-image: url(/images/gd-bg.png);
   /* background-position-x: 500px; */
-  background-position-y: -1100px;
-  background-position-x: 0;
+  /* background-position-y: -1100px;
+  background-position-x: 0; */
+  /* background-position-y: -20%; */
+  background-position-y: -300px;
+
+  background-position-x: 50%;
   background-repeat: no-repeat;
-  background-size: 105%;
+  /* background-size: 105%; */
 }
 
 nav {
@@ -21,7 +25,7 @@ nav {
 }
 
 .navbar-scroll {
-  background-color: rgba(0, 0, 0, 0.9) !important; /* 设置你需要的背景颜色 */
+  background-color: rgba(0, 0, 0, 0.95) !important; /* 设置你需要的背景颜色 */
 }
 
 .header-section .header-text {
