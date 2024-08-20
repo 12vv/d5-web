@@ -32,7 +32,7 @@ const DLPMainSection = () => {
       </div>
 
       <div className="flex pt-20 2xl:pt-20 items-center justify-center">
-        <div className="w-[900px] 2xl:w-[1200px] video-wrapper">
+        <div className="w-[900px] 2xl:w-[1200px] video-wrapper z-[100]">
           <img src={"/images/demo.gif"} />
           {/* <video
             width="100%"
@@ -49,7 +49,7 @@ const DLPMainSection = () => {
             />
             Your browser does not support the video tag.
           </video> */}
-          <div className="glow-bg"></div>
+          <div className="glow-bg-1"></div>
         </div>
       </div>
     </div>
