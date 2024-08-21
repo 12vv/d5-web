@@ -448,11 +448,10 @@ nav {
   overflow: hidden;
   background: linear-gradient(
     0.25turn,
-    rgba(91, 149, 191, 0.5),
-    rgba(239, 144, 165, 0.5) 30%,
-    transparent 50%,
-    rgba(239, 144, 165, 0.5) 80%,
-    rgba(91, 149, 191, 0.5)
+    transparent 0%,
+    /* rgba(91, 149, 191, 0.5), */ rgba(91, 149, 191, 0.5) 50%,
+    /* rgba(91, 149, 191, 0.5), */ transparent 100%
+      /* rgba(91, 149, 191, 0.5) */
   );
   /* border-top: 1px solid rgb(204, 204, 204); */
   /* border-bottom: 1px solid rgb(204, 204, 204); */
@@ -461,8 +460,8 @@ nav {
 .QFxmO {
   mask-image: url(/images/Vector.svg);
   mask-repeat: no-repeat;
-  mask-size: 100% 100%;
-  mask-position: center center;
+  mask-size: 100%;
+  mask-position: center 80%;
 }
 
 .ckoHrE .retrogrid::after {
