@@ -78,6 +78,7 @@
   transform: skewY(-15deg) translate(-50%, -50%) scale(0.7) translateZ(0);
   pointer-events: none;
   transition: filter 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  z-index: -1;
 }
 
 .glow-bg-1 {
