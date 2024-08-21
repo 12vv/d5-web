@@ -1,3 +1,5 @@
+"use client";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "./components/Navbar";
@@ -17,9 +19,34 @@ import IntroductionSection from "./components/IntroductionSection";
 import BigTitleSection from "./components/BigTitleSection";
 
 export default function Home() {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const divStyle = {
+    "--x": `${position.x}px`,
+    "--y": `${position.y}px`,
+  } as any;
+
+  useEffect(() => {
+    const handleMouseMove = (event: MouseEvent) => {
+      setPosition({ x: event.clientX, y: event.clientY });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
   return (
     <>
       <ScrollToTopButton />
+      <div className="sc-f4aae16d-0 ckoHrE qs-block1 pos" style={divStyle}>
+        <div className="sc-f4aae16d-0 sc-f4aae16d-1 ckoHrE QFxmO retrogrid"></div>
+        <div className="sc-f4aae16d-0 sc-f4aae16d-1 ckoHrE QFxmO retrogrid"></div>
+
+        {/* <div className="sc-f4aae16d-0 sc-f4aae16d-2 ckoHrE llUbIZ retrogrid"></div> */}
+      </div>
       <main className="flex min-h-screen flex-col">
         <Navbar />
         {/* <div className="container mt-24 mx-auto px-12 py-4"> */}

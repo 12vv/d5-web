@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import LinkBtn from "./LinkBtn";
@@ -11,87 +11,88 @@ import RoundedButtonOutline from "./RoundedBtnOutline";
 
 const HeaderSection = () => {
   return (
-    <div className="container mx-auto mt-36 py-4 px-4 header-section">
-      <div className="flex flex-col rounded-lg  xl:flex-row justify-between w-full">
-        <div className="text-[60px] xl:text-[80px] 2xl:text-[90px] font-extrabold">
-          {/* <img
+    <>
+      <div className="container mx-auto mt-36 py-4 px-4 header-section">
+        <div className="flex flex-col rounded-lg  xl:flex-row justify-between w-full">
+          <div className="text-[60px] xl:text-[80px] 2xl:text-[90px] font-extrabold">
+            {/* <img
             className="h-[60px] lg:h-[90px] 2xl:h-[120px] rounded-r-lg object-cover md:rounded-none md:rounded-r-lg"
             src={"/images/header-logo.png"}
             alt=""
           /> */}
-          <p className="ml-20">让天下再没有</p>
-          <p className="gradient-text">难用的数据</p>
-          <span className="blinking-cursor">|</span>
+            <p className="ml-20">让天下再没有</p>
+            <p className="gradient-text">难用的数据</p>
+            <span className="blinking-cursor">|</span>
+          </div>
+          <div className="flex items-center">
+            <IconBtn
+              style={{ marginRight: "50px" }}
+              icon={"/images/icons/icon-ai.png"}
+              text={"Data Labeling Platform"}
+            />
+            <IconBtn icon={"/images/icons/icon-robot.png"} text={"Data GPT"} />
+          </div>
         </div>
-        <div className="flex items-center">
-          <IconBtn
-            style={{ marginRight: "50px" }}
-            icon={"/images/icons/icon-ai.png"}
-            text={"Data Labeling Platform"}
-          />
-          <IconBtn icon={"/images/icons/icon-robot.png"} text={"Data GPT"} />
-        </div>
-      </div>
 
-      <div className="flex justify-between pt-5 2xl:pt-20 flex-col xl:flex-row">
-        <div className="w-2/4 mr-[50px] xl:[mr-200px]">
-          {/* <a
+        <div className="flex justify-between pt-5 2xl:pt-20 flex-col xl:flex-row">
+          <div className="w-2/4 mr-[50px] xl:[mr-200px]">
+            {/* <a
             href="#"
             className="btn-flip"
             data-back="立即试用"
             data-front="Data Labeling Platform"
           ></a> */}
-          {/* <button>立即注册</button> */}
-          {/* <IconBtn icon={"/images/icons/icon-rocket.png"} text={"立即试用"} /> */}
-          {/* <CapsuleBtn /> */}
-          <div className="css-typing text-[18px] 2xl:text-[22px] mt-[20px] w-[80%]">
-            <p className="">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人工智能大模型训练前的
-              <span className="font-bold">数据清洗、数据标注、数据扩充</span>
-              等服
-            </p>
-            <p className="">
-              务。并提供包括模型预训练、微调、定制化数据库在内的一站式人
-            </p>
-            <p className="">工智能模型训练解决方案。</p>
-          </div>
+            {/* <button>立即注册</button> */}
+            {/* <IconBtn icon={"/images/icons/icon-rocket.png"} text={"立即试用"} /> */}
+            {/* <CapsuleBtn /> */}
+            <div className="css-typing text-[18px] 2xl:text-[22px] mt-[20px] w-[80%]">
+              <p className="">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人工智能大模型训练前的
+                <span className="font-bold">数据清洗、数据标注、数据扩充</span>
+                等服
+              </p>
+              <p className="">
+                务。并提供包括模型预训练、微调、定制化数据库在内的一站式人
+              </p>
+              <p className="">工智能模型训练解决方案。</p>
+            </div>
 
-          <div className="flex mt-10">
-            <RoundedButton2
-              text="申请试用"
-              onClick={() => {}}
-              icon={"/images/icons/icon-rocket.png"}
-              className="text-[20px] 2xl:text-[30px] px-[28px] py-[10px] 2xl:px-[40px] 2xl:py-[15px] mr-[10px] 2xl:mr-[40px]"
-            />
-            <div className="glow-bg-small"></div>
-            <RoundedButtonOutline
-              text="加入我们"
-              onClick={() => {}}
-              className="text-[20px] 2xl:text-[30px] px-[28px] py-[10px] 2xl:px-[40px] 2xl:py-[15px]"
-            />
+            <div className="flex mt-10">
+              <RoundedButton2
+                text="申请试用"
+                onClick={() => {}}
+                icon={"/images/icons/icon-rocket.png"}
+                className="text-[20px] 2xl:text-[30px] px-[28px] py-[10px] 2xl:px-[40px] 2xl:py-[15px] mr-[10px] 2xl:mr-[40px]"
+              />
+              <div className="glow-bg-small"></div>
+              <RoundedButtonOutline
+                text="加入我们"
+                onClick={() => {}}
+                className="text-[20px] 2xl:text-[30px] px-[28px] py-[10px] 2xl:px-[40px] 2xl:py-[15px]"
+              />
+            </div>
+          </div>
+          <div className="w-[530px] 2xl:w-[800px] video-wrapper relative h-full">
+            <video
+              width="100%"
+              height="auto"
+              preload="metadata"
+              autoPlay
+              muted
+              playsInline
+              loop
+            >
+              <source
+                src="https://www.taskade.com/static_images/landing/agent-multi-background.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <div className="glow-bg"></div>
           </div>
         </div>
-        <div className="w-[530px] 2xl:w-[800px] video-wrapper relative h-full">
-          <video
-            width="100%"
-            height="auto"
-            preload="metadata"
-            autoPlay
-            muted
-            playsInline
-            loop
-          >
-            <source
-              src="https://www.taskade.com/static_images/landing/agent-multi-background.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <div className="glow-bg"></div>
-        </div>
-      </div>
 
-      {/* <section className="flex">
+        {/* <section className="flex">
         <div className="grid grid-cols-1 sm:grid-cols-12">
           <div className="col-span-4 place-self-center mt-4 lg:mt-0">
             <div className="lg:w-[650px] lg:h-[650px] relative w-[250px] h-[250px]">
@@ -135,7 +136,8 @@ const HeaderSection = () => {
           </div>
         </div>
       </section> */}
-    </div>
+      </div>
+    </>
   );
 };
 
