@@ -1,7 +1,7 @@
 .icon-btn {
   /* border: 1px solid #ccc; */
   border-radius: 10px;
-  box-shadow: inset 2px 2px 5px #aaa, inset -2px -2px 5px #aaa;
+  box-shadow: inset 2px 2px 5px #aaa;
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease;
