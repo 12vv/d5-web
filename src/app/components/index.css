@@ -449,7 +449,7 @@ nav {
   background: linear-gradient(
     0.25turn,
     transparent 0%,
-    /* rgba(91, 149, 191, 0.5), */ rgba(91, 149, 191, 0.5) 50%,
+    /* rgba(91, 149, 191, 0.5), */ rgba(120, 98, 255, 0.5) 50%,
     /* rgba(91, 149, 191, 0.5), */ transparent 100%
       /* rgba(91, 149, 191, 0.5) */
   );
