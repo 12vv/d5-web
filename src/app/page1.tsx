@@ -1,9 +1,11 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import styles from "./page.module.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import EmailSection from "./components/EmailSection";
-import HeaderSection from "./components/Version2/HeaderSection";
+import HeaderSection from "./components/HeaderSection";
 import IconSection from "./components/IconSection";
 import IntroSection from "./components/IntroSection";
 import ProjectsSection from "./components/ProjectsSection";
@@ -13,11 +15,8 @@ import PlanSection from "./components/PlanSection";
 import { ScrollToTopButton } from "./components/ScrollToTopButton";
 import ExampleSection from "./components/ExampleSection";
 import LogoSection from "./components/LogoSection";
-// import IntroductionSection from "./components/IntroductionSection";
-import IntroductionSection from "./components/Version2/IntroductionSection";
-
-import BigTitleSection from "./components/Version2/BigTitleSection";
-import About from "./components/Version2/Projects";
+import IntroductionSection from "./components/IntroductionSection";
+import BigTitleSection from "./components/BigTitleSection";
 
 export default function Home() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -48,14 +47,13 @@ export default function Home() {
 
         {/* <div className="sc-f4aae16d-0 sc-f4aae16d-2 ckoHrE llUbIZ retrogrid"></div> */}
       </div>
-      <main className="flex min-h-screen flex-col px-44 2xl:px-32">
+      <main className="flex min-h-screen flex-col">
         <Navbar />
         {/* <div className="container mt-24 mx-auto px-12 py-4"> */}
         <HeaderSection />
         {/* <LogoSection /> */}
         <IntroductionSection />
         <BigTitleSection backgroundImage="/images/Vector-gradient.svg" />
-        <About />
         {/* <IconSection /> */}
         {/* <IntroSection /> */}
         {/* <ExampleSection /> */}

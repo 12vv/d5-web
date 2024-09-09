@@ -1,0 +1,9 @@
+.line-bg {
+  background-image: url("/images/lines.svg");
+  /* opacity: 0.7; */
+  /* position: absolute; */
+  background-repeat: no-repeat;
+
+  background-size: 110%;
+  /* background-position: center; */
+}

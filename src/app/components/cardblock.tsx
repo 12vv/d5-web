@@ -2,14 +2,19 @@
 import React from "react";
 import Link from "next/link";
 
-const CardBlock = ({ content, img }: any) => {
+const RoundCardBlock = ({ title, content, img }: any) => {
   return (
-    <div className="block max-w-[14rem]">
+    <div className="block w-[250px] h-[250px] 2xl:w-[300px] 2xl:h-[300px] rounded-[50%] border-[1px] p-8 flex justify-center items-center flex-col">
       <div className="relative overflow-hidden bg-cover bg-no-repeat flex justify-center">
-        <img className="rounded-t-lg " src={img} alt="" />
+        <img
+          className="w-[50px] h-[50px] 2xl:w-[80px] 2xl:h-[80px]"
+          src={img}
+          alt=""
+        />
       </div>
-      <div className="p-6">
-        <p className="text-base text-center text-neutral-200 dark:text-neutral-200">
+      <div className="m-4">
+        <p className="text-[20px] 2xl:text-[30px] text-center pb-4">{title}</p>
+        <p className="text-center text-neutral-200 dark:text-neutral-200 text-[13px] 2xl:text[18px]">
           {content}
         </p>
       </div>
@@ -17,4 +22,4 @@ const CardBlock = ({ content, img }: any) => {
   );
 };
 
-export default CardBlock;
+export default RoundCardBlock;

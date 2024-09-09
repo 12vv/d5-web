@@ -49,7 +49,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed mx-auto top-0 left-0 right-0 z-10 bg-[#121212] navbar ${
+      className={`fixed mx-auto top-0 left-0 right-0 z-10 bg-[#121212] navbar px-44  2xl:px-32 ${
         scroll ? "navbar-scroll" : ""
       }`}
     >
