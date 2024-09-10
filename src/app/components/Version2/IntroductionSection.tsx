@@ -51,12 +51,14 @@ const IntroductionSection = () => {
           <div className="text-[40px]">D5 DATA</div>
         </div>
         <div className="flex flex-col items-end text-[20px] 2xl:text-[30px] justify-around">
-          <p className="mt-2">第五维度专注于利用自研算法</p>
+          {/* <p className="mt-2">第五维度专注于利用自研算法</p>
           <p className="mt-2">将AI技术融入数据标注与整理，将学术科研</p>
           <p className="mt-2">
             成果转化为人人可用的定制化数据标注工具与生成式数据整理工具
           </p>
-          <p className="mt-2">与生成式数据整理工具</p>
+          <p className="mt-2">与生成式数据整理工具</p> */}
+          <p className="mt-2">自研数据清洗系统</p>
+          <p className="mt-2">打造开箱即用的数据生成与标注平台</p>
         </div>
       </div>
       {/* <div className="glow-bg"></div> */}

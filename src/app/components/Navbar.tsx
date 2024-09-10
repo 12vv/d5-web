@@ -8,22 +8,22 @@ import "./index.css";
 import CapsuleBtn from "./CapsuleBtn";
 
 const navLinks = [
-  {
-    title: "关于",
-    path: "/#index",
-  },
-  {
-    title: "项目",
-    path: "/#",
-  },
-  {
-    title: "联系",
-    path: "/contact",
-  },
-  {
-    title: "合作",
-    path: "/#",
-  },
+  // {
+  //   title: "关于",
+  //   path: "/#index",
+  // },
+  // {
+  //   title: "项目",
+  //   path: "/#",
+  // },
+  // {
+  //   title: "联系",
+  //   path: "/contact",
+  // },
+  // {
+  //   title: "合作",
+  //   path: "/#",
+  // },
 ];
 
 const Navbar = () => {
