@@ -22,7 +22,7 @@ const RectButton: React.FC<RoundedButtonProps> = ({
 }) => {
   return (
     <button
-      className={`rect-button glow-on-hover-2 ${className}`}
+      className={`rect-button glow-on-hover2 ${className}`}
       style={{
         color: color || "white",
         backgroundColor: backgroundColor || "",

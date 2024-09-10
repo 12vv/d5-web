@@ -18,6 +18,7 @@ import IntroductionSection from "./components/Version2/IntroductionSection";
 
 import BigTitleSection from "./components/Version2/BigTitleSection";
 import About from "./components/Version2/Projects";
+import LearnMore from "./components/Version2/LearnMore";
 
 export default function Home() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -56,6 +57,7 @@ export default function Home() {
         <IntroductionSection />
         <BigTitleSection backgroundImage="/images/Vector-gradient.svg" />
         <About />
+        <LearnMore />
         {/* <IconSection /> */}
         {/* <IntroSection /> */}
         {/* <ExampleSection /> */}

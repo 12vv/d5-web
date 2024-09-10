@@ -20,7 +20,9 @@ export default function About() {
               <div>
                 <RectButton
                   text="立即试用"
-                  onClick={() => {}}
+                  onClick={() => {
+                    window.location.href = "https://app.docta.ai/";
+                  }}
                   icon={"/images/icons/icon-rocket.png"}
                   className="text-[16px] mr-[10px] 2xl:mr-[40px]"
                 />
@@ -71,7 +73,9 @@ export default function About() {
               <div>
                 <RectButton
                   text="立即试用"
-                  onClick={() => {}}
+                  onClick={() => {
+                    window.location.href = "https://app.docta.ai/";
+                  }}
                   icon={"/images/icons/icon-rocket.png"}
                   className="text-[16px]"
                 />
@@ -93,7 +97,9 @@ export default function About() {
               <div>
                 <RectButton
                   text="立即试用"
-                  onClick={() => {}}
+                  onClick={() => {
+                    window.location.href = "https://app.docta.ai/";
+                  }}
                   icon={"/images/icons/icon-rocket.png"}
                   className="text-[16px] mr-[10px] 2xl:mr-[40px]"
                 />
@@ -144,7 +150,9 @@ export default function About() {
               <div>
                 <RectButton
                   text="立即试用"
-                  onClick={() => {}}
+                  onClick={() => {
+                    window.location.href = "http://test.docta.ai:3001/";
+                  }}
                   icon={"/images/icons/icon-rocket.png"}
                   className="text-[16px] "
                 />
