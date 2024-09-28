@@ -68,6 +68,7 @@ const CircleIconText: React.FC<CircleIconTextProps> = ({
           : "translate(0, 0)",
 
         // background: `conic-gradient(from ${angle}deg, red, #bbb)`,
+        // @ts-ignore
         "--border-angle": `${angle}deg`,
       }}
     >
