@@ -6,6 +6,7 @@ import LinkBtn from "../LinkBtn";
 import "./index.css";
 import VerticalTab from "../VerticalTab";
 import CardBlock from "../cardblock";
+import CircleIconText from "../InteractiveCircle";
 
 const IntroductionSection = () => {
   const tabs = [
@@ -65,21 +66,38 @@ const IntroductionSection = () => {
 
       <div className="flex justify-between pt-5 2xl:pt-20 flex-col xl:flex-row mt-[80px] 2xl:mt-[120px]">
         <div className="w-[530px] 2xl:w-[800px] video-wrapper relative h-full flex-1 ">
-          <CardBlock
+          {/* <CardBlock
+            title={"# 数据标注 #"}
+            content={"将原始数据通过标注转化为可供模型学习的高质量数据"}
+            img={"/images/intro1.svg"}
+          /> */}
+          <CircleIconText
             title={"# 数据标注 #"}
             content={"将原始数据通过标注转化为可供模型学习的高质量数据"}
             img={"/images/intro1.svg"}
           />
         </div>
         <div className="w-[530px] 2xl:w-[800px] video-wrapper relative h-full flex-1 ">
-          <CardBlock
+          {/* <CardBlock
+            title={"# 数据清洗 #"}
+            content={"将原始数据将被提升为模型训练可以使用的高质量数据"}
+            img={"/images/intro2.svg"}
+          /> */}
+
+          <CircleIconText
             title={"# 数据清洗 #"}
             content={"将原始数据将被提升为模型训练可以使用的高质量数据"}
             img={"/images/intro2.svg"}
           />
         </div>
         <div className="w-[530px] 2xl:w-[800px] video-wrapper relative h-full flex-1 ">
-          <CardBlock
+          {/* <CardBlock
+            title={"# 数据扩充 #"}
+            content={"利用原始数据大幅提升高质量数据的数量"}
+            img={"/images/intro3.svg"}
+          /> */}
+
+          <CircleIconText
             title={"# 数据扩充 #"}
             content={"利用原始数据大幅提升高质量数据的数量"}
             img={"/images/intro3.svg"}

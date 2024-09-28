@@ -5,6 +5,8 @@ import IconBtn from "../IconBtn";
 import CapsuleBtn from "../MainBtn";
 import RoundedButton2 from "../RoundedBtn2";
 import ReadMoreBtn from "../ReadMoreBtn";
+import Spline from "@splinetool/react-spline";
+import InteractiveCircle from "../InteractiveCircle";
 
 const HeaderSection = () => {
   return (
@@ -52,12 +54,13 @@ const HeaderSection = () => {
           </div>
           <div className="">
             {/* <div className="glow-bg"></div> */}
-
+            {/* <InteractiveCircle /> */}
             <img
               className="h-[420px] 2xl:h-[600px] rounded-r-lg object-cover md:rounded-none md:rounded-r-lg"
               src={"/images/logos/3dlogo.png"}
               alt=""
             />
+            {/* <Spline scene="https://prod.spline.design/sb9Tkk-eAMm69fFr/scene.splinecode" /> */}
           </div>
         </div>
 
