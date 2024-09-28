@@ -55,7 +55,7 @@ const CircleIconText: React.FC<CircleIconTextProps> = ({
 
   return (
     <div
-      className="circle-container " // block  w-[280px] h-[280px] 2xl:w-[300px] 2xl:h-[300px] rounded-[50%] border-[1px] p-8 flex justify-center items-center flex-col
+      className="circle-container block  w-[280px] h-[280px] 2xl:w-[300px] 2xl:h-[300px] rounded-[50%] border-[1px] p-8 flex justify-center items-center flex-col" //
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => {
         setHovered(false);

@@ -16,25 +16,8 @@
   background-color: transparent; /* 背景保持透明 */
   background-size: cover;
   border-radius: 50%;
-  width: 280px;
-  height: 280px;
-}
-
-.circle-container:before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
-  border-radius: 50%;
-  /* background: conic-gradient(from var(--border-angle), #ff0000, #0000ff); */
-  z-index: -1; /* 确保伪元素在 div 后面 */
-  background-color: transparent;
-
-  background-position: center;
-  background-size: cover;
-  border: 5px solid transparent; /* 边框透明 */
+  /* width: 280px;
+  height: 280px; */
 }
 
 .circle-container .icon {
