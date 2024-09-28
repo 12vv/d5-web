@@ -5,7 +5,7 @@ import IconBtn from "../IconBtn";
 import CapsuleBtn from "../MainBtn";
 import RoundedButton2 from "../RoundedBtn2";
 import ReadMoreBtn from "../ReadMoreBtn";
-import Spline from "@splinetool/react-spline";
+// import Spline from "@splinetool/react-spline";
 import InteractiveCircle from "../InteractiveCircle";
 
 const HeaderSection = () => {
