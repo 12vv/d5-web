@@ -267,6 +267,11 @@ nav {
   transform: translate(-50%, -50%);
 }
 
+.background-section:hover .glow-bg-2 {
+  filter: blur(40px);
+  opacity: 1;
+}
+
 .css-typing p {
   margin-bottom: 7px;
   border: none;
@@ -462,7 +467,7 @@ nav {
   mask-image: url(/images/wave.svg);
 
   mask-repeat: no-repeat;
-  mask-size: 120%;
+  mask-size: 140%;
   mask-position: center top;
 }
 

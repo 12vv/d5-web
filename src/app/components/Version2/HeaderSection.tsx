@@ -5,71 +5,108 @@ import IconBtn from "../IconBtn";
 import CapsuleBtn from "../MainBtn";
 import RoundedButton2 from "../RoundedBtn2";
 import ReadMoreBtn from "../ReadMoreBtn";
-// import Spline from "@splinetool/react-spline";
-import InteractiveCircle from "../InteractiveCircle";
+import { ImageFollowMouse } from "../ImageFollowMouse";
+import GlowLine from "../GrowLine";
+import LOGO from "../Model";
 
 const HeaderSection = () => {
   return (
     <>
-      <div className="container mx-auto mt-36 py-4 px-8 header-section">
-        <div className="flex flex-col rounded-lg  xl:flex-row justify-between w-full">
-          <div className="text-[60px] xl:text-[80px] 2xl:text-[90px] font-extrabold">
-            {/* <img
+      {/* <iframe
+        src="https://my.spline.design/untitled-410df56b872a72765d5642b26f5f8d7c/"
+        width="100%"
+        height="100%"
+      ></iframe> */}
+
+      <iframe
+        src="https://my.spline.design/untitled-410df56b872a72765d5642b26f5f8d7c/"
+        // width="100%"
+        // height="100px"
+        frameBorder="0"
+        style={{
+          overflow: "hidden",
+          overflowX: "hidden",
+          overflowY: "hidden",
+          height: "90%",
+          // width: "80%",
+          position: "absolute",
+          top: "-40px",
+          // left: "10px",
+          right: "0px",
+          bottom: "0px",
+        }}
+        className="w-0 md:w-[100%] min-[1701px]:w-[80%]"
+      ></iframe>
+      <div className="container mx-auto mt-24 md:mt-36 py-0 px-0 header-section min-[1701px]:mt-28 min-[1701px]:px-4">
+        {/* <GlowLine /> */}
+
+        {/* <LOGO /> */}
+        <div className="flex flex-col justify-between h-[80vh]">
+          <div className="flex rounded-lg xl:flex-row justify-between w-full min-[1701px]:h-[60vh]">
+            <div className="text-[54px] md:text-[70px] min-[1701px]:text-[90px] font-extrabold">
+              <div className="flex flex-col justify-between h-full">
+                {/* <img
             className="h-[60px] lg:h-[90px] 2xl:h-[120px] rounded-r-lg object-cover md:rounded-none md:rounded-r-lg"
             src={"/images/header-logo.png"}
             alt=""
           /> */}
-            {/* <p className="ml-20">让天下再没有</p>
+                {/* <p className="ml-20">让天下再没有</p>
             <p className="gradient-text">难用的数据</p>
             <span className="blinking-cursor">|</span> */}
-            <p className="">消除天下</p>
-            <p className="gradient-text">难用的数据</p>
+                <div>
+                  <p className="">消除天下</p>
+                  <p className="gradient-text">难用的数据</p>
 
-            <div className="w-2/4 mr-[50px] xl:[mr-200px]">
-              <div className="css-typing text-[18px] 2xl:text-[22px] mt-[20px] w-[80%]">
-                <p className="">
-                  {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
-                  人工智能大模型训练前的
-                  <span className="font-bold">
-                    数据清洗、数据标注、数据扩充
-                  </span>
-                  等服
-                </p>
-                <p className="">
-                  务。并提供包括模型预训练、微调、定制化数据库在内的一站式人
-                </p>
-                <p className="">工智能模型训练解决方案。</p>
-              </div>
-
-              <div className="flex mt-10">
-                <RoundedButton2
-                  text="申请试用"
-                  onClick={() => {}}
-                  icon={"/images/icons/icon-rocket.png"}
-                  className="text-[20px] 2xl:text-[30px] px-[28px] py-[10px] 2xl:px-[40px] 2xl:py-[15px] mr-[10px] 2xl:mr-[40px]"
-                />
-                <div className="glow-bg-small"></div>
+                  <div className="w-2/4  md:mr-[50px] xl:[mr-200px] md:w-[100%]">
+                    <div className="css-typing text-[12px] md:text-[18px] min-[1701px]:text-[22px] mt-[20px]">
+                      <p className="">
+                        {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
+                        人工智能大模型训练前的
+                        <span className="font-bold">
+                          数据清洗、数据标注、数据扩充
+                        </span>
+                        等服
+                      </p>
+                      <p className="">
+                        务。并提供包括模型预训练、微调、定制化数据库在内的一站式人
+                      </p>
+                      <p className="">工智能模型训练解决方案。</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex mt-10">
+                  <RoundedButton2
+                    text="申请试用"
+                    onClick={() => {
+                      window.open(
+                        "https://t0zagqubvm5.feishu.cn/share/base/form/shrcnSJalPUBI8tzZT50oymXvUh",
+                        "_blank"
+                      );
+                    }}
+                    icon={"/images/icons/icon-rocket.png"}
+                    className="text-[20px] min-[1701px]:text-[30px] px-[28px] py-[10px] min-[1701px]:px-[40px] min-[1701px]:py-[15px] mr-[10px] min-[1701px]:mr-[40px]"
+                  />
+                  {/* <div className="glow-bg-small"></div> */}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="">
-            {/* <div className="glow-bg"></div> */}
-            {/* <InteractiveCircle /> */}
-            <img
-              className="h-[420px] 2xl:h-[600px] rounded-r-lg object-cover md:rounded-none md:rounded-r-lg"
-              src={"/images/logos/3dlogo.png"}
-              alt=""
-            />
-            {/* <Spline scene="https://prod.spline.design/sb9Tkk-eAMm69fFr/scene.splinecode" /> */}
-          </div>
-        </div>
 
-        <div className="flex justify-between pt-5 2xl:pt-20 flex-col xl:flex-row">
-          <div className="w-[530px] 2xl:w-[800px] video-wrapper relative h-full"></div>
-        </div>
+            {/* <div className="flex justify-between flex-col xl:flex-row flex-1"> */}
+            {/* <ImageFollowMouse /> */}
+            {/* <div className="w-full h-full">
+              
+                <img
+                  className="rounded-r-lg object-cover md:rounded-none md:rounded-r-lg  h-full"
+                  src={"/images/logos/3dlogo.png"}
+                  alt=""
+                />
+              </div> */}
+            {/* </div> */}
+          </div>
 
-        <div className="flex justify-center">
-          <ReadMoreBtn />
+          <div className="flex justify-center">
+            <ReadMoreBtn />
+          </div>
         </div>
 
         {/* <section className="flex">

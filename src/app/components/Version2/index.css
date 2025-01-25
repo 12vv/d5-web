@@ -1,9 +1,12 @@
 .line-bg {
-  background-image: url("/images/lines.svg");
+  background-image: url("/images/introbg.svg");
   /* opacity: 0.7; */
   /* position: absolute; */
-  background-repeat: no-repeat;
 
-  background-size: 110%;
+  /* background-size: 100%; */
   /* background-position: center; */
+  background-size: 100vw 50vh;
+  background-position-x: 70%;
+  background-position-y: 20%; /* 背景图片居中 */
+  background-repeat: no-repeat; /* 防止背景图片重复 */
 }

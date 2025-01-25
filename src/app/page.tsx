@@ -4,12 +4,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import EmailSection from "./components/EmailSection";
 import HeaderSection from "./components/Version2/HeaderSection";
-import IconSection from "./components/IconSection";
-import IntroSection from "./components/IntroSection";
-import ProjectsSection from "./components/ProjectsSection";
-import StaticLogoSection from "./components/StaticLogoSection";
-import AchievementsSection from "./components/AchievementSection";
-import PlanSection from "./components/PlanSection";
 import { ScrollToTopButton } from "./components/ScrollToTopButton";
 import ExampleSection from "./components/ExampleSection";
 import LogoSection from "./components/LogoSection";
@@ -49,23 +43,14 @@ export default function Home() {
 
         {/* <div className="sc-f4aae16d-0 sc-f4aae16d-2 ckoHrE llUbIZ retrogrid"></div> */}
       </div>
-      <main className="flex min-h-screen flex-col px-44 2xl:px-32">
+      <main className="flex min-h-screen flex-col px-8 md:px-44 min-[1701px]:px-36  ">
         <Navbar />
-        {/* <div className="container mt-24 mx-auto px-12 py-4"> */}
         <HeaderSection />
-        {/* <LogoSection /> */}
         <IntroductionSection />
         <BigTitleSection backgroundImage="/images/Vector-gradient.svg" />
-        <About />
+        {/* <About /> */}
         <LearnMore />
-        {/* <IconSection /> */}
-        {/* <IntroSection /> */}
-        {/* <ExampleSection /> */}
-        {/* <AchievementsSection /> */}
-        {/* <ProjectsSection /> */}
-        {/* <StaticLogoSection /> */}
 
-        {/* <EmailSection /> */}
         {/* </div> */}
         <Footer />
       </main>

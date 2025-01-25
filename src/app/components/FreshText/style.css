@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap");
+
+.parent {
+  /* width: "100%"; */
+  /* background-color: black; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 80px; */
+}
+
+/* .child {
+  width: "80%";
+  padding: 0 40px;
+} */
+
+.heading2 {
+  /* color: transparent; */
+  background: linear-gradient(
+    to right,
+    rgb(250, 250, 250) 50%,
+    rgb(37, 37, 37) 50%
+  );
+  background-position-x: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.text {
+  text-align: right;
+}
+
+.text > p > div {
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 50%,
+    rgb(37, 37, 37) 50%
+  );
+  /* background-size: 200% 100%; */
+  /* background-position-x: 100%; */
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /*   margin-bottom: -250px; */
+  /* margin-left: 50px; */
+  /* line-height: 1.2; */
+  /*   outline: 6px dotted teal; */
+  /* font-size: 10vw; */
+}

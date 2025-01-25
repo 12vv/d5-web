@@ -85,9 +85,9 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div>
+        {/* <div>
           <CapsuleBtn />
-        </div>
+        </div> */}
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>

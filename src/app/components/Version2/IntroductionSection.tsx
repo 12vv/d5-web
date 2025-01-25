@@ -7,6 +7,7 @@ import "./index.css";
 import VerticalTab from "../VerticalTab";
 import CardBlock from "../cardblock";
 import CircleIconText from "../InteractiveCircle";
+import FreshText from "../../components/FreshText";
 
 const IntroductionSection = () => {
   const tabs = [
@@ -36,9 +37,9 @@ const IntroductionSection = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-44 py-4 px-4 header-section line-bg">
-      <div className="flex flex-col rounded-lg  xl:flex-row justify-between w-full items-center mt-[50px] 2xl:mt-[80px]">
-        <div className="text-[40px] xl:text-[60px] 2xl:text-[60px] font-extrabold">
+    <div className="header-section line-bg flex flex-col  items-center">
+      <div className="flex flex-col rounded-lg  xl:flex-row justify-between w-[80%] items-center mt-[100px] md:mt-[200px] min-[1701px]:mt-[230px]">
+        <div className="text-[40px] min-[1701px]:text-[60px] font-extrabold">
           {/* <img
             className="h-[60px] lg:h-[90px] 2xl:h-[120px] rounded-r-lg object-cover md:rounded-none md:rounded-r-lg"
             src={"/images/header-logo.png"}
@@ -47,25 +48,24 @@ const IntroductionSection = () => {
           {/* <p className="ml-20">让天下再没有</p>
             <p className="gradient-text">难用的数据</p>
             <span className="blinking-cursor">|</span> */}
-          <div className="">关于</div>
+          {/* <div className="">关于</div>
           <div className="gradient-text mt-0">第五维度</div>
-          <div className="text-[40px]">D5 DATA</div>
+          <div className="text-[40px]">D5 DATA</div> */}
         </div>
-        <div className="flex flex-col items-end text-[20px] 2xl:text-[30px] justify-around">
+        <div className="flex flex-col items-end text-[14px] md:text-[24px] min-[1701px]:text-[30px] justify-around">
+          <FreshText />
           {/* <p className="mt-2">第五维度专注于利用自研算法</p>
           <p className="mt-2">将AI技术融入数据标注与整理，将学术科研</p>
-          <p className="mt-2">
-            成果转化为人人可用的定制化数据标注工具与生成式数据整理工具
-          </p>
+          <p className="mt-2">成果转化为人人可用的定制化数据标注工具</p>
           <p className="mt-2">与生成式数据整理工具</p> */}
-          <p className="mt-2">自研数据清洗系统</p>
-          <p className="mt-2">打造开箱即用的数据生成与标注平台</p>
+          {/* <p className="mt-2">自研数据清洗系统</p>
+          <p className="mt-2">打造开箱即用的数据生成与标注平台</p> */}
         </div>
       </div>
       {/* <div className="glow-bg"></div> */}
 
-      <div className="flex justify-between pt-5 2xl:pt-20 flex-col xl:flex-row mt-[80px] 2xl:mt-[120px]">
-        <div className="w-[530px] 2xl:w-[800px] video-wrapper relative h-full flex-1 ">
+      <div className="flex justify-between 2xl:pt-20 flex-col xl:flex-row mt-[140px] 2xl:mt-[180px]  w-[90%] ">
+        <div className="">
           {/* <CardBlock
             title={"# 数据标注 #"}
             content={"将原始数据通过标注转化为可供模型学习的高质量数据"}
@@ -77,7 +77,7 @@ const IntroductionSection = () => {
             img={"/images/intro1.svg"}
           />
         </div>
-        <div className="w-[530px] 2xl:w-[800px] video-wrapper relative h-full flex-1 ">
+        <div className="flex justify-end">
           {/* <CardBlock
             title={"# 数据清洗 #"}
             content={"将原始数据将被提升为模型训练可以使用的高质量数据"}
@@ -90,7 +90,7 @@ const IntroductionSection = () => {
             img={"/images/intro2.svg"}
           />
         </div>
-        <div className="w-[530px] 2xl:w-[800px] video-wrapper relative h-full flex-1 ">
+        <div className="">
           {/* <CardBlock
             title={"# 数据扩充 #"}
             content={"利用原始数据大幅提升高质量数据的数量"}
